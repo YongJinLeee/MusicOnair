@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C4B4A2C26A9787900AC6791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A2B26A9787900AC6791 /* AppDelegate.swift */; };
 		4C4B4A2E26A9787900AC6791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */; };
-		4C4B4A3026A9787900AC6791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A2F26A9787900AC6791 /* ViewController.swift */; };
+		4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */; };
 		4C4B4A3326A9787900AC6791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A3126A9787900AC6791 /* Main.storyboard */; };
 		4C4B4A3626A9787900AC6791 /* MusicOnair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A3426A9787900AC6791 /* MusicOnair.xcdatamodeld */; };
 		4C4B4A3826A9787A00AC6791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A3726A9787A00AC6791 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		4C4B4A2826A9787900AC6791 /* MusicOnair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicOnair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4B4A2B26A9787900AC6791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C4B4A2F26A9787900AC6791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C4B4A3226A9787900AC6791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C4B4A3526A9787900AC6791 /* MusicOnair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicOnair.xcdatamodel; sourceTree = "<group>"; };
 		4C4B4A3726A9787A00AC6791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				4C4B4A2B26A9787900AC6791 /* AppDelegate.swift */,
 				4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */,
-				4C4B4A2F26A9787900AC6791 /* ViewController.swift */,
+				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
 				4C4B4A3126A9787900AC6791 /* Main.storyboard */,
 				4C4B4A3726A9787A00AC6791 /* Assets.xcassets */,
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4B4A3026A9787900AC6791 /* ViewController.swift in Sources */,
+				4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */,
 				4C4B4A3626A9787900AC6791 /* MusicOnair.xcdatamodeld in Sources */,
 				4C4B4A2C26A9787900AC6791 /* AppDelegate.swift in Sources */,
 				4C4B4A2E26A9787900AC6791 /* SceneDelegate.swift in Sources */,
