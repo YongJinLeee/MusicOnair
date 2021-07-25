@@ -16,6 +16,7 @@
 		4C4B4A3B26A9787A00AC6791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */; };
 		4C4B4A4626A9787A00AC6791 /* MusicOnairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A4526A9787A00AC6791 /* MusicOnairTests.swift */; };
 		4C4B4A5126A9787A00AC6791 /* MusicOnairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A5026A9787A00AC6791 /* MusicOnairUITests.swift */; };
+		4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4C4B4A4C26A9787A00AC6791 /* MusicOnairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicOnairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4B4A5026A9787A00AC6791 /* MusicOnairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicOnairUITests.swift; sourceTree = "<group>"; };
 		4C4B4A5226A9787A00AC6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		4C4B4A2A26A9787900AC6791 /* MusicOnair */ = {
 			isa = PBXGroup;
 			children = (
+				4C4B4A5E26AC60E200AC6791 /* Resource */,
 				4C4B4A2B26A9787900AC6791 /* AppDelegate.swift */,
 				4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */,
 				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
@@ -109,6 +112,7 @@
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
 				4C4B4A3426A9787900AC6791 /* MusicOnair.xcdatamodeld */,
+				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
 			);
 			path = MusicOnair;
 			sourceTree = "<group>";
@@ -129,6 +133,13 @@
 				4C4B4A5226A9787A00AC6791 /* Info.plist */,
 			);
 			path = MusicOnairUITests;
+			sourceTree = "<group>";
+		};
+		4C4B4A5E26AC60E200AC6791 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */,
 				4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */,
 				4C4B4A3626A9787900AC6791 /* MusicOnair.xcdatamodeld in Sources */,
 				4C4B4A2C26A9787900AC6791 /* AppDelegate.swift in Sources */,
