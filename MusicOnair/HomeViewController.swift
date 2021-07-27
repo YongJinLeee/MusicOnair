@@ -49,6 +49,19 @@ extension HomeViewController: UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     // cell size [20 - cell - 20 - cell - 20]
+       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           
+           //cell간 간격
+           let CellSpacing: CGFloat = 20
+           // 좌-우 marginal Space
+           let inset: CGFloat = 20
+           let TitleAreaHeight: CGFloat = 60
+           
+           let width: CGFloat = (collectionView.bounds.width -  CellSpacing - inset * 2) / 2
+           let height: CGFloat = width + TitleAreaHeight
+           
+           return CGSize(width: width, height: height)
+       }
 }
 
 // MVVM : View
