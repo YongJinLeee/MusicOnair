@@ -18,12 +18,16 @@ class  HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
     // cell counting
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     // how to Viewing cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
     }
     
     //헤더뷰 구성
