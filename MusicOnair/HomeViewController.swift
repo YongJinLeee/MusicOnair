@@ -9,7 +9,6 @@ import UIKit
 class  HomeViewController: UIViewController {
     // !!! 곡 트랙관리 객체 추가
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,7 +26,6 @@ extension HomeViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
         return cell
     }
     
