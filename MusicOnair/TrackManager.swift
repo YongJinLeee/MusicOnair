@@ -38,11 +38,9 @@ class TrackManager {
 //        }
         
         //higher-order Function 고계 함수 : 함수의 인수를 함수로 받을 수 있고 함수를 반환하는 함수
-        let trackItems = urls.map { url -> AVPlayerItem in
-            let item = AVPlayerItem(url: url)
-            return item
+        let trackItems = urls.map { url in
+            return AVPlayerItem(url: url)
         }
-        
             return trackItems
     }
     
