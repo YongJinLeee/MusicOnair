@@ -30,13 +30,19 @@ class TrackManager {
         // DB에서 파일 읽기 -> AVPlayerItem 생성
         let urls = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: nil)  ?? []
         
-        var trackItems: [AVPlayerItem] = []
-        //url은 여러항목이기 때문에 for로 돌리면서 데이터 로드
-        for url in urls {
-            let Items = AVPlayerItem(url: url)
-            trackItems.append(Items)
+//        var trackItems: [AVPlayerItem] = []
+//        //url은 여러항목이기 때문에 for로 돌리면서 데이터 로드
+//        for url in urls {
+//            let Items = AVPlayerItem(url: url)
+//            trackItems.append(Items)
+//        }
+        
+        //higher-order Function 고계 함수 : 함수의 인수를 함수로 받을 수 있고 함수를 반환하는 함수
+        let trackItems = urls.map { url -> AVPlayerItem in
+            let item = AVPlayerItem(url: url)
+            return item
         }
-            let item = AVPlayerItem(url: <#T##URL#>)
+        
             return trackItems
     }
     
