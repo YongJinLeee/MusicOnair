@@ -18,6 +18,7 @@
 		4C4B4A5126A9787A00AC6791 /* MusicOnairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A5026A9787A00AC6791 /* MusicOnairUITests.swift */; };
 		4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */; };
 		4C4B4A6226B08C0500AC6791 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */; };
+		4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6326B08E6900AC6791 /* TrackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4C4B4A5226A9787A00AC6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
 		4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C4B4A6326B08E6900AC6791 /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +111,14 @@
 				4C4B4A2B26A9787900AC6791 /* AppDelegate.swift */,
 				4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */,
 				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
-				4C4B4A3126A9787900AC6791 /* Main.storyboard */,
 				4C4B4A3726A9787A00AC6791 /* Assets.xcassets */,
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
+				4C4B4A3126A9787900AC6791 /* Main.storyboard */,
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
 				4C4B4A3426A9787900AC6791 /* MusicOnair.xcdatamodeld */,
 				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
 				4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */,
+				4C4B4A6326B08E6900AC6791 /* TrackManager.swift */,
 			);
 			path = MusicOnair;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */,
 				4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */,
+				4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */,
 				4C4B4A3626A9787900AC6791 /* MusicOnair.xcdatamodeld in Sources */,
 				4C4B4A2C26A9787900AC6791 /* AppDelegate.swift in Sources */,
 				4C4B4A6226B08C0500AC6791 /* TrackCollectionViewCell.swift in Sources */,
