@@ -30,8 +30,8 @@ class TrackManager {
     // 트랙 로드하기
     func loadTrackInfo() -> [AVPlayerItem] {
         // DB에서 파일 읽기 -> AVPlayerItem 생성
+        // 패키지 번들 내 mp3 파일의 URL전부 로드, AVPlayerItem에 반환
         let urls = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: nil)  ?? []
-        
 //        var trackItems: [AVPlayerItem] = []
 //        //url은 여러항목이기 때문에 for로 돌리면서 데이터 로드
 //        for url in urls {
@@ -51,7 +51,7 @@ class TrackManager {
 //            return trackItems
         
     }
-    // 인덱스에 맞는 트랙 로드하기
+    // 해당 인덱스에 맞는 트랙을 배열로 로드하기
     func loadTrackByIndex(at index: Int) -> TrackInfo? {
         
         let playerItem = tracks[index]
