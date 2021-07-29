@@ -55,7 +55,9 @@ class TrackManager {
     func loadTrackByIndex(at index: Int) -> TrackInfo? {
         
         let playerItem = tracks[index]
-        return playerItem.convertToTrack()
+        let loadedTrack = playerItem.convertToTrack()
+        return loadedTrack
+        // style : 반환타입 명시..
     }
     
     func loadAlbumInfo(tracks: [AVPlayerItem]) -> [AlbumInfo] {
