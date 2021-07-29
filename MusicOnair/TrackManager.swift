@@ -61,9 +61,23 @@ class TrackManager {
     }
     
     func loadAlbumInfo(tracks: [AVPlayerItem]) -> [AlbumInfo] {
-        return []
+        
+        let trackList: [TrackInfo] = tracks.compactMap { $0.convertToTrack()  }
+        // 앨범 이름을 기준으로 album의 Dictionary 구성
+        let albumDics = Dictionary(grouping: trackList, by: { (track) in track.albumTitle  })
+        
+        //album array (앨범 모음, 관리)
+        var albums: [AlbumInfo] = []
+        for (key, value) in albumDics {
+            let title = key
+            let tracks = value
+            
+            let album = AlbumInfo(title: title, tracks: tracks)
+            albums.append(album)
+        }
+                
+        return albums
     }
- 
 }
 
 //func 플레이어에 트랙 로드
