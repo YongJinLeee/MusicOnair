@@ -74,7 +74,6 @@ struct TrackInfo {
         self.artist = artist
         self.albumTitle = albumTitle
         self.albumCover = albumCover
-        
     }
 }
 // MVVM : ViewModel; 데이터처리
@@ -94,5 +93,4 @@ struct AlbumInfo {
         self.title = title
         self.tracks = tracks
     }
-    
 }

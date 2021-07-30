@@ -13,7 +13,6 @@ class TrackCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var artistName: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -22,7 +21,6 @@ class TrackCollectionViewCell: UICollectionViewCell {
     }
     
     func cellDataUpdate(CellInfo: AlbumInfo) {
-        
         songTitle.text = CellInfo.title
         artistName.text = CellInfo.artist
         albumCover.image = CellInfo.trackThumbnail
