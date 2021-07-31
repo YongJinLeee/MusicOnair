@@ -20,6 +20,7 @@
 		4C4B4A6226B08C0500AC6791 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */; };
 		4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6326B08E6900AC6791 /* TrackManager.swift */; };
 		4C4B4A6626B2C66A00AC6791 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6526B2C66A00AC6791 /* Extention.swift */; };
+		4C4B4A6926B599BF00AC6791 /* TrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C4B4A6326B08E6900AC6791 /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
 		4C4B4A6526B2C66A00AC6791 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
 				4C4B4A3426A9787900AC6791 /* MusicOnair.xcdatamodeld */,
 				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
+				4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */,
 			);
 			path = MusicOnair;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4B4A6626B2C66A00AC6791 /* Extention.swift in Sources */,
+				4C4B4A6926B599BF00AC6791 /* TrackInfo.swift in Sources */,
 				4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */,
 				4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */,
 				4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */,
