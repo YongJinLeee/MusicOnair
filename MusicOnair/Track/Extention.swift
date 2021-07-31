@@ -43,7 +43,7 @@ extension AVPlayerItem {
         return TrackInfo(title: title, artist: artist, albumTitle: albumName, albumCover: albumCover)
     }
 }
-
+// Computed Property
 extension AVMetadataItem {
     var title: String? {
         guard let key = commonKey?.rawValue, key == "title" else {
@@ -71,5 +71,12 @@ extension AVMetadataItem {
             return nil
         }
         return image
+    }
+}
+// 재생 여부확인 property
+extension AVPlayer {
+    var isPlaying: Bool {
+        guard self.currentItem != nil else { return false }
+        return self.rate != 0
     }
 }

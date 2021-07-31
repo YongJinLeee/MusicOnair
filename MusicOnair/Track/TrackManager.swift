@@ -26,14 +26,6 @@ class TrackManager {
         // DB에서 파일 읽기 -> AVPlayerItem 생성
         // 패키지 번들 내 mp3 파일의 URL전부 로드, AVPlayerItem에 반환
         let urls = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: nil)  ?? []
-//        var trackItems: [AVPlayerItem] = []
-//        //url은 여러항목이기 때문에 for로 돌리면서 데이터 로드
-//        for url in urls {
-//            let Items = AVPlayerItem(url: url)
-//            trackItems.append(Items)
-//        }
-        //higher-order Function 고계 함수 : 함수의 인수를 함수로 받을 수 있고 함수를 반환하는 함수
-        // 클로저 더 축약할 수 있지 않나..
 
         let trackItems = urls.map { url in
             return AVPlayerItem(url: url)
