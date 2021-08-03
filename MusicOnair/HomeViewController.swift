@@ -28,8 +28,8 @@ extension HomeViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         //곡 표시 함수 호출 및 cell에 전달
-        let item = trackManage.loadTrackByIndex(at: indexPath.item)
-        cell.cellDataUpdate(CellInfo: item)
+        let PlayListitem = trackManage.loadTrackByIndex(at: indexPath.item)
+        cell.cellDataUpdate(CellInfo: PlayListitem)
         return cell
     }
     

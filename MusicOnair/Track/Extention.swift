@@ -17,14 +17,16 @@ extension AVPlayerItem {
         let metadataList = asset.metadata
         
         // 정보가 없을 수도 있음; 옵셔널
-        var trackTitle: String?
+        var tracktitle: String?
         var trackArtist: String?
         var trackAlbumName: String?
-        var trackAlbumCover: UIImage?
+        var trackArtwork: UIImage?
         
+        // metadata의 정보 ID는 정해져있음 title, artist, albumName, artwork
+        // 주의!
         for metadata in metadataList {
             if let title = metadata.title {
-               trackTitle = title
+               tracktitle = title
             }
             if let artist = metadata.artist {
                 trackArtist = artist
@@ -32,18 +34,18 @@ extension AVPlayerItem {
             if let albumName =  metadata.albumName {
                 trackAlbumName = albumName
             }
-            if let albumCover = metadata.albumCover {
-                trackAlbumCover =  albumCover
+            if let artwork = metadata.artwork {
+                trackArtwork = artwork
             }
         }
         // guard- let 옵셔널 바인딩
-        guard let title = trackTitle,
+        guard let title = tracktitle,
               let artist = trackArtist,
               let albumName = trackAlbumName,
-              let albumCover = trackAlbumCover else {
-            return nil
+              let artwork = trackArtwork else {
+                return nil
         }
-        return TrackInfo(title: title, artist: artist, albumTitle: albumName, albumCover: albumCover)
+        return TrackInfo(title: title, artist: artist, albumTitle: albumName, albumCover: artwork)
     }
 }
 // Computed Property
@@ -69,8 +71,8 @@ extension AVMetadataItem {
         return stringValue
     }
     
-    var albumCover: UIImage? {
-        guard let key = commonKey?.rawValue, key == "albumCover", let data = dataValue, let image = UIImage(data: data) else {
+    var artwork: UIImage? {
+        guard let key = commonKey?.rawValue, key == "artwork", let data = dataValue, let image = UIImage(data: data) else {
             return nil
         }
         return image
