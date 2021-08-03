@@ -19,11 +19,12 @@ class TrackCollectionViewCell: UICollectionViewCell {
         albumCover.layer.cornerRadius = 4
         artistName.textColor = UIColor.systemGray2
     }
-    
-    func cellDataUpdate(CellInfo: AlbumInfo) {
+    // 곡 정보 표시 함수
+    func cellDataUpdate(CellInfo: TrackInfo!) {
+        guard let trackInfo = CellInfo else { return }
         songTitle.text = CellInfo.title
         artistName.text = CellInfo.artist
-        albumCover.image = CellInfo.trackThumbnail
+        albumCover.image = trackInfo.albumCover
     }
     
 }

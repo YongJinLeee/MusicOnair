@@ -7,7 +7,8 @@
 import UIKit
 
 class  HomeViewController: UIViewController {
-    // !!! 곡 트랙관리 객체 추가
+    // !!! 곡 트랙관리 객체
+    let trackManage: TrackManager = TrackManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,7 @@ class  HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
     // cell counting
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return trackManage.tracks.count
     }
     
     // how to Viewing cell
@@ -26,6 +27,9 @@ extension HomeViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
             return UICollectionViewCell()
         }
+        //곡 표시 함수 호출 및 cell에 전달
+        let item = trackManage.loadTrackByIndex(at: indexPath.item)
+        cell.cellDataUpdate(CellInfo: item)
         return cell
     }
     

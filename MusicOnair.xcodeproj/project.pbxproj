@@ -148,7 +148,6 @@
 		4C4B4A5E26AC60E200AC6791 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4B4A6526B2C66A00AC6791 /* Extention.swift */,
+				4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */,
 				4C4B4A6326B08E6900AC6791 /* TrackManager.swift */,
 			);
 			path = Track;
