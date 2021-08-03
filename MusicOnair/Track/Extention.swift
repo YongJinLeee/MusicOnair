@@ -9,6 +9,9 @@ import UIKit
 import AVFoundation
 
 extension AVPlayerItem {
+    
+//     var assets: [AVAsset]? = nil // stored property 접근 불가
+    
     // 음원 파일의 meta data를 TrackInfo 구조체의 stored 프로퍼티에 맞게 변환하는 함수
     func convertToTrack() -> TrackInfo? {
         let metadataList = asset.metadata
