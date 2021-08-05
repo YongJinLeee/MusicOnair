@@ -81,6 +81,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-02-VGq">
+                                            <rect key="frame" x="19" y="51" width="376" height="200"/>
+                                            <connections>
+                                                <action selector="tapHeaderBtn:" destination="ZcF-EL-BF2" eventType="touchUpInside" id="QZf-dM-KEQ"/>
+                                            </connections>
+                                        </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-qh-xLv">
                                             <rect key="frame" x="19" y="51" width="376" height="200"/>
                                             <constraints>
@@ -106,26 +112,23 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-02-VGq">
-                                            <rect key="frame" x="20" y="51" width="375" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <connections>
-                                                <action selector="tapHeaderBtn:" destination="ZcF-EL-BF2" eventType="touchUpInside" id="QZf-dM-KEQ"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="JF0-02-VGq" firstAttribute="trailing" secondItem="Fd4-qh-xLv" secondAttribute="trailing" id="3XG-N9-Xke"/>
                                         <constraint firstItem="RnB-w2-Ryk" firstAttribute="top" secondItem="ZcF-EL-BF2" secondAttribute="top" constant="30" id="46w-Zz-pGV"/>
                                         <constraint firstItem="P5D-aR-P07" firstAttribute="leading" secondItem="Fd4-qh-xLv" secondAttribute="leading" constant="10" id="4nl-JS-uFB"/>
                                         <constraint firstItem="P5D-aR-P07" firstAttribute="top" secondItem="EMB-HX-d4a" secondAttribute="bottom" id="M8j-WZ-d9b"/>
                                         <constraint firstItem="SpO-l7-CC9" firstAttribute="trailing" secondItem="Fd4-qh-xLv" secondAttribute="trailing" constant="-10" id="TLQ-au-qMq"/>
                                         <constraint firstAttribute="trailing" secondItem="Fd4-qh-xLv" secondAttribute="trailing" constant="19" id="Tf3-EV-UCN"/>
                                         <constraint firstItem="EMB-HX-d4a" firstAttribute="leading" secondItem="Fd4-qh-xLv" secondAttribute="leading" constant="10" id="VMf-MQ-tPD"/>
+                                        <constraint firstItem="JF0-02-VGq" firstAttribute="leading" secondItem="Fd4-qh-xLv" secondAttribute="leading" id="cHf-aJ-ZLf"/>
                                         <constraint firstItem="P5D-aR-P07" firstAttribute="bottom" secondItem="Fd4-qh-xLv" secondAttribute="bottom" constant="-5" id="dw7-9y-4l9"/>
                                         <constraint firstItem="RnB-w2-Ryk" firstAttribute="leading" secondItem="ZcF-EL-BF2" secondAttribute="leading" constant="20" id="j7p-ku-PzZ"/>
                                         <constraint firstItem="Fd4-qh-xLv" firstAttribute="leading" secondItem="ZcF-EL-BF2" secondAttribute="leading" constant="19" id="jr2-xq-HZq"/>
                                         <constraint firstItem="SpO-l7-CC9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P5D-aR-P07" secondAttribute="trailing" constant="15" id="mdX-SE-pF3"/>
                                         <constraint firstItem="Fd4-qh-xLv" firstAttribute="top" secondItem="RnB-w2-Ryk" secondAttribute="bottom" id="qpq-gO-9eg"/>
+                                        <constraint firstItem="JF0-02-VGq" firstAttribute="top" secondItem="Fd4-qh-xLv" secondAttribute="top" id="rJB-Lq-eUn"/>
+                                        <constraint firstItem="JF0-02-VGq" firstAttribute="bottom" secondItem="Fd4-qh-xLv" secondAttribute="bottom" id="tpf-mL-2A0"/>
                                         <constraint firstItem="SpO-l7-CC9" firstAttribute="bottom" secondItem="Fd4-qh-xLv" secondAttribute="bottom" constant="-5" id="zRz-GT-3M4"/>
                                     </constraints>
                                     <connections>
