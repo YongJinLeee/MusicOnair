@@ -157,7 +157,6 @@
 				4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */,
 				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
 				4C4B4A3726A9787A00AC6791 /* Assets.xcassets */,
-				4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */,
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
 				4C4B4A3126A9787900AC6791 /* Main.storyboard */,
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4B4A6526B2C66A00AC6791 /* Extention.swift */,
+				4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */,
 				4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */,
 				4C4B4A6326B08E6900AC6791 /* TrackManager.swift */,
 			);
