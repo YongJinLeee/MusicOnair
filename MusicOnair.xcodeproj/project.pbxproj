@@ -40,6 +40,7 @@
 		4C4B4A8D26B99DCB00AC6791 /* Moonlight!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A7A26B99DCB00AC6791 /* Moonlight!.mp3 */; };
 		4C4B4A8E26B99DCB00AC6791 /* im trying to find myself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A7B26B99DCB00AC6791 /* im trying to find myself.mp3 */; };
 		4C4B4A8F26B99DCB00AC6791 /* Bike Rides On The Block.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A7C26B99DCB00AC6791 /* Bike Rides On The Block.mp3 */; };
+		4C4B4A9126BC0D5500AC6791 /* TrackCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		4C4B4A7A26B99DCB00AC6791 /* Moonlight!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Moonlight!.mp3"; sourceTree = "<group>"; };
 		4C4B4A7B26B99DCB00AC6791 /* im trying to find myself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "im trying to find myself.mp3"; sourceTree = "<group>"; };
 		4C4B4A7C26B99DCB00AC6791 /* Bike Rides On The Block.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bike Rides On The Block.mp3"; sourceTree = "<group>"; };
+		4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				4C4B4A2D26A9787900AC6791 /* SceneDelegate.swift */,
 				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
 				4C4B4A3726A9787A00AC6791 /* Assets.xcassets */,
+				4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */,
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
 				4C4B4A3126A9787900AC6791 /* Main.storyboard */,
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
@@ -370,6 +373,7 @@
 			files = (
 				4C4B4A6626B2C66A00AC6791 /* Extention.swift in Sources */,
 				4C4B4A6926B599BF00AC6791 /* TrackInfo.swift in Sources */,
+				4C4B4A9126BC0D5500AC6791 /* TrackCollectionHeaderView.swift in Sources */,
 				4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */,
 				4C4B4A3026A9787900AC6791 /* HomeViewController.swift in Sources */,
 				4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */,
