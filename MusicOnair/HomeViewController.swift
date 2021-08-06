@@ -40,11 +40,17 @@ extension HomeViewController: UICollectionViewDataSource {
             guard let todaysTrack = trackManage.todaysPick else {
                 return UICollectionReusableView()
             }
-            
+            //custom Header View 호출
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TrackCollectionHeaderView", for: indexPath) as? TrackCollectionHeaderView else {
                 return UICollectionReusableView()
             }
             header.update(with: todaysTrack)
+            header.tapHandler = { todaysTrack -> Void in
+                //player 활성화
+                //console test
+                print("---------> Today's track title: \(todaysTrack.convertToTrack()?.title) ")
+            }
+            
             
             return header
         default:

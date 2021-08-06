@@ -20,7 +20,6 @@ class TrackCollectionHeaderView: UICollectionReusableView {
         todayArtworkImg.layer.cornerRadius = 4
     }
     
-    
     func update(with item: AVPlayerItem) {
         self.item = item
         
@@ -29,11 +28,9 @@ class TrackCollectionHeaderView: UICollectionReusableView {
         self.todayArtworkImg.image = HeaderTrackInfo.albumCover
         self.descriptionLabel.text = "Today's Pick is \(HeaderTrackInfo.artist)'s Album - \(HeaderTrackInfo.albumTitle)"
     }
-
+    // Header View 클릭 handler 설정
     @IBAction func tapHeaderBtn(_ sender: UIButton) {
         guard let todaysItem = item else { return }
-        
         tapHandler?(todaysItem)
     }
-    
 }
