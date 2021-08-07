@@ -4,6 +4,7 @@
 
 ----------
 Collection View style 메인 화면 구현(210808) 
+
 Cell(album artwork)과 Header View(Today's Pick) 구성
 
 
