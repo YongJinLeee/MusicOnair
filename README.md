@@ -4,7 +4,7 @@
 
 
 ---------- (210809)
-player page 구현
+
 
 ----------
 Collection View style 메인 화면 구현(210808) 
