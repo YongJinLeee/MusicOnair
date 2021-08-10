@@ -20,6 +20,8 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var totalTime: UILabel!
     @IBOutlet weak var playBtn: UIButton!
     
+    // stored property
+    let simplePlayer = SimplePlayer.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
