@@ -43,6 +43,7 @@
 		4C4B4A9126BC0D5500AC6791 /* TrackCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */; };
 		4C4B4A9426C2438700AC6791 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A9326C2438600AC6791 /* Player.storyboard */; };
 		4C4B4A9626C24FAA00AC6791 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A9526C24FAA00AC6791 /* PlayerViewController.swift */; };
+		4C4B4A9826C2554F00AC6791 /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A9726C2554F00AC6791 /* SimplePlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		4C4B4A9026BC0D5500AC6791 /* TrackCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4C4B4A9326C2438600AC6791 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		4C4B4A9526C24FAA00AC6791 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		4C4B4A9726C2554F00AC6791 /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
 				4C4B4A9326C2438600AC6791 /* Player.storyboard */,
 				4C4B4A9526C24FAA00AC6791 /* PlayerViewController.swift */,
+				4C4B4A9726C2554F00AC6791 /* SimplePlayer.swift */,
 			);
 			path = MusicOnair;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */,
 				4C4B4A3626A9787900AC6791 /* MusicOnair.xcdatamodeld in Sources */,
 				4C4B4A2C26A9787900AC6791 /* AppDelegate.swift in Sources */,
+				4C4B4A9826C2554F00AC6791 /* SimplePlayer.swift in Sources */,
 				4C4B4A6226B08C0500AC6791 /* TrackCollectionViewCell.swift in Sources */,
 				4C4B4A9626C24FAA00AC6791 /* PlayerViewController.swift in Sources */,
 				4C4B4A2E26A9787900AC6791 /* SceneDelegate.swift in Sources */,
