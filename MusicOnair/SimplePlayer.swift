@@ -48,6 +48,10 @@ class SimplePlayer {
     func seek(to time:CMTime) {
         player.seek(to: time)
     }
+    // player에 load된 track item 교체
+    func replaceCurrentItem(with item: AVPlayerItem?) {
+        player.replaceCurrentItem(with: item)
+    }
     // 탐색된 시간(지정된 구간)에 따른 호출 동작
     func addPeriodicTimeObserver(forInterval: CMTime,
                            queue: DispatchQueue?,
