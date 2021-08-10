@@ -30,7 +30,7 @@ class SimplePlayer {
     var isPlaying: Bool {
         return player.isPlaying
     }
-    // 현재 트랙 가져오기
+    // 현재 트랙의 정보 가져오기 (protocol: AVPlayerItem - convertToTrack)
     var currentItem: AVPlayerItem? {
         return player.currentItem
     }

@@ -22,14 +22,21 @@ class PlayerViewController: UIViewController {
     
     // stored property
     let simplePlayer = SimplePlayer.shared
+    let trackInfo : TrackManager = TrackManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        // Do any additional setup after loading the view.
+        playerDataUpdate()
     }
     
+    func playerDataUpdate() {
+        let currentTrackInfo = simplePlayer.currentItem?.convertToTrack()
+        guard let currentTrackMetadata = currentTrackInfo else {
+            return }
+        
+        artworkImg.image = currentTrackMetadata.albumCover
+        trackTitle.text = currentTrackMetadata.title
+        trackArtist.text = currentTrackMetadata.artist
+    }
 
 }

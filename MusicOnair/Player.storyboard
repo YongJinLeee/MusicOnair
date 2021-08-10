@@ -56,6 +56,9 @@
                                 <state key="normal" image="play.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
                                 </state>
+                                <connections>
+                                    <action selector="togglePlayBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HN4-D3-5e3"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t57-Oe-5jN">
                                 <rect key="frame" x="18" y="690" width="378" height="31"/>
