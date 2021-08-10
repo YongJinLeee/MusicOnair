@@ -62,6 +62,11 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t57-Oe-5jN">
                                 <rect key="frame" x="18" y="690" width="378" height="31"/>
+                                <connections>
+                                    <action selector="beginDrag:" destination="Y6W-OH-hqX" eventType="editingDidBegin" id="5sJ-dx-KBj"/>
+                                    <action selector="endDrag:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="uQ3-m4-riy"/>
+                                    <action selector="seek:" destination="Y6W-OH-hqX" eventType="valueChanged" id="jMZ-Ka-jVs"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

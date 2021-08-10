@@ -22,7 +22,8 @@ class PlayerViewController: UIViewController {
     
     // stored property
     let simplePlayer = SimplePlayer.shared
-    let trackInfo : TrackManager = TrackManager()
+    let isSeeking: Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +50,10 @@ class PlayerViewController: UIViewController {
         }
         updatePlayBtnUI()
     }
-    // 재생/멈춤시 play/pause 버튼 이미지 변환
+    // 재생/멈춤시 play/pause 버튼 이미지 변환 (토글 호출 될 때마다)
     func updatePlayBtnUI() {
         if simplePlayer.isPlaying {
-            let configuration = UIImage.SymbolConfiguration(pointSize: 40)
+            let configuration = UIImage.SymbolConfiguration(pointSize: 40) // size 지정
             let pauseImg = UIImage(systemName: "pause.fill", withConfiguration: configuration)
             
             playBtn.setImage(pauseImg, for: .normal)
@@ -63,5 +64,15 @@ class PlayerViewController: UIViewController {
             playBtn.setImage(playImg, for: .normal)
         }
     }
+    
+    @IBAction func beginDrag(_ sender: UISlider) {
+    }
+    
+    @IBAction func endDrag(_ sender: UISlider) {
+    }
+    
+    @IBAction func seek(_ sender: UISlider) {
+    }
+    
     
 }
