@@ -22,7 +22,7 @@ class PlayerViewController: UIViewController {
     
     // stored property
     let simplePlayer = SimplePlayer.shared
-    let isSeeking: Bool = false
+    var isSeeking: Bool = false
     
     
     override func viewDidLoad() {
@@ -66,9 +66,12 @@ class PlayerViewController: UIViewController {
     }
     
     @IBAction func beginDrag(_ sender: UISlider) {
+        isSeeking = true
     }
     
     @IBAction func endDrag(_ sender: UISlider) {
+        isSeeking = false
+        
     }
     
     @IBAction func seek(_ sender: UISlider) {
