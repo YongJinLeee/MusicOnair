@@ -41,7 +41,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-6j-1z3" userLabel="totlaTime">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-6j-1z3" userLabel="totalTime">
                                 <rect key="frame" x="355" y="730" width="39" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -94,7 +94,7 @@
                         <outlet property="currentTime" destination="wFQ-hR-Hhd" id="URU-h3-rgN"/>
                         <outlet property="playBtn" destination="4Us-ig-VcF" id="ebb-7n-c9N"/>
                         <outlet property="timeSlider" destination="t57-Oe-5jN" id="yel-JE-plR"/>
-                        <outlet property="totalTime" destination="R0M-6j-1z3" id="Tly-rs-vvw"/>
+                        <outlet property="totalTime" destination="R0M-6j-1z3" id="mf3-B7-fbd"/>
                         <outlet property="trackArtist" destination="1Ov-Cw-oSR" id="AgO-jh-I7U"/>
                         <outlet property="trackTitle" destination="8Cs-Jm-JFf" id="t9v-92-TKV"/>
                     </connections>
