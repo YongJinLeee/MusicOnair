@@ -81,6 +81,15 @@
                             <constraint firstItem="wFQ-hR-Hhd" firstAttribute="top" secondItem="t57-Oe-5jN" secondAttribute="bottom" constant="10" id="vzH-az-jO2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artworkImg" destination="a17-OI-nfN" id="qqi-dM-M0W"/>
+                        <outlet property="currentTime" destination="wFQ-hR-Hhd" id="URU-h3-rgN"/>
+                        <outlet property="playBtn" destination="4Us-ig-VcF" id="ebb-7n-c9N"/>
+                        <outlet property="timeSlider" destination="t57-Oe-5jN" id="yel-JE-plR"/>
+                        <outlet property="totalTime" destination="R0M-6j-1z3" id="Tly-rs-vvw"/>
+                        <outlet property="trackArtist" destination="1Ov-Cw-oSR" id="AgO-jh-I7U"/>
+                        <outlet property="trackTitle" destination="8Cs-Jm-JFf" id="t9v-92-TKV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
