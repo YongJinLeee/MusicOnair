@@ -45,12 +45,11 @@ extension HomeViewController: UICollectionViewDataSource {
                 return UICollectionReusableView()
             }
             header.update(with: todaysTrack)
+            // player invocation
             header.tapHandler = { todaysTrack in
                 let playerStoryboard = UIStoryboard.init(name: "Player", bundle: nil)
-                    guard let PlayerViewCtrl = playerStoryboard.instantiateViewController(identifier: "PlayerViewController") as? PlayerViewController else { return }
-                
+                guard let PlayerViewCtrl = playerStoryboard.instantiateViewController(identifier: "PlayerViewController") as? PlayerViewController else { return }
                 PlayerViewCtrl.simplePlayer.replaceCurrentItem(with: todaysTrack)
-                
                 self.present(PlayerViewCtrl, animated: true, completion: nil)
                 
                 //console test
