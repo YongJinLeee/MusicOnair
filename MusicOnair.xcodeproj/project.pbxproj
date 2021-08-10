@@ -19,7 +19,7 @@
 		4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */; };
 		4C4B4A6226B08C0500AC6791 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */; };
 		4C4B4A6426B08E6900AC6791 /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6326B08E6900AC6791 /* TrackManager.swift */; };
-		4C4B4A6626B2C66A00AC6791 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6526B2C66A00AC6791 /* Extention.swift */; };
+		4C4B4A6626B2C66A00AC6791 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6526B2C66A00AC6791 /* Extension.swift */; };
 		4C4B4A6926B599BF00AC6791 /* TrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */; };
 		4C4B4A7D26B99DCB00AC6791 /* memories (listen on spotify from 3am ep).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6A26B99DCB00AC6791 /* memories (listen on spotify from 3am ep).mp3 */; };
 		4C4B4A7E26B99DCB00AC6791 /* elijah who - hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B4A6B26B99DCB00AC6791 /* elijah who - hello.mp3 */; };
@@ -82,7 +82,7 @@
 		4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
 		4C4B4A6126B08C0500AC6791 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C4B4A6326B08E6900AC6791 /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
-		4C4B4A6526B2C66A00AC6791 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		4C4B4A6526B2C66A00AC6791 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfo.swift; sourceTree = "<group>"; };
 		4C4B4A6A26B99DCB00AC6791 /* memories (listen on spotify from 3am ep).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "memories (listen on spotify from 3am ep).mp3"; sourceTree = "<group>"; };
 		4C4B4A6B26B99DCB00AC6791 /* elijah who - hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elijah who - hello.mp3"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		4C4B4A6726B5982200AC6791 /* Track */ = {
 			isa = PBXGroup;
 			children = (
-				4C4B4A6526B2C66A00AC6791 /* Extention.swift */,
+				4C4B4A6526B2C66A00AC6791 /* Extension.swift */,
 				4C4B4A6826B599BF00AC6791 /* TrackInfo.swift */,
 				4C4B4A6326B08E6900AC6791 /* TrackManager.swift */,
 			);
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4B4A6626B2C66A00AC6791 /* Extention.swift in Sources */,
+				4C4B4A6626B2C66A00AC6791 /* Extension.swift in Sources */,
 				4C4B4A6926B599BF00AC6791 /* TrackInfo.swift in Sources */,
 				4C4B4A9126BC0D5500AC6791 /* TrackCollectionHeaderView.swift in Sources */,
 				4C4B4A6026AC61B500AC6791 /* DefaultStyle.swift in Sources */,
