@@ -26,6 +26,8 @@ class PlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updatePlayBtnUI()
         playerDataUpdate()
     }
     
@@ -38,5 +40,28 @@ class PlayerViewController: UIViewController {
         trackTitle.text = currentTrackMetadata.title
         trackArtist.text = currentTrackMetadata.artist
     }
-
+    // 재생버튼 토글 isPlaying은 기본적으로 false로 리턴되어있음(extension 파일에 구현)
+    @IBAction func togglePlayBtn(_ sender: UIButton) {
+        if simplePlayer.isPlaying {
+            simplePlayer.pause()
+        } else {
+            simplePlayer.play()
+        }
+        updatePlayBtnUI()
+    }
+    // 재생/멈춤시 play/pause 버튼 이미지 변환
+    func updatePlayBtnUI() {
+        if simplePlayer.isPlaying {
+            let configuration = UIImage.SymbolConfiguration(pointSize: 40)
+            let pauseImg = UIImage(systemName: "pause.fill", withConfiguration: configuration)
+            
+            playBtn.setImage(pauseImg, for: .normal)
+        } else {
+            let configuration = UIImage.SymbolConfiguration(pointSize: 40)
+            let playImg = UIImage(systemName: "play.fill", withConfiguration: configuration)
+            
+            playBtn.setImage(playImg, for: .normal)
+        }
+    }
+    
 }
