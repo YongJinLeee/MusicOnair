@@ -10,9 +10,10 @@
 
 import AVFoundation
 
+// 앱 전반에 걸쳐 한 개의 객체만 있으면 되고, 필요시에만 호출되어 사용되도록 하면 되는 '싱글톤 객체'
 class SimplePlayer {
     
-    //SimplePlayer class의 인스턴스 생성
+    //SimplePlayer class의 인스턴스 생성 (static)
     static let shared = SimplePlayer()
     // AVFoundation 모듈의 AVPlayer class 인스턴스 생성
     private let player = AVPlayer()
