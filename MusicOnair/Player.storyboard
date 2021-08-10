@@ -11,7 +11,7 @@
         <!--Player View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="PlayerViewController" customModule="MusicOnair" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerViewController" id="Y6W-OH-hqX" customClass="PlayerViewController" customModule="MusicOnair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="width" constant="55" id="Syl-mt-ZvK"/>
                                     <constraint firstAttribute="height" constant="55" id="ytV-Ct-pME"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="play.fill" catalog="system">
+                                <state key="normal" image="play.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
                                 </state>
                             </button>
