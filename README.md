@@ -3,7 +3,8 @@
 패스트캠퍼스 교육 과정 참조.
 
 
----------- Player 구성 (210809)
+---------- 
+Player 구성 (210809)
 
 
 ![스크린샷 2021-08-10 21 31 10](https://user-images.githubusercontent.com/40759743/128867206-aae58b9f-a9fb-4f48-89f7-ddaebf85d979.png)
