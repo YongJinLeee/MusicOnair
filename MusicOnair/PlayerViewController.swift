@@ -24,13 +24,20 @@ class PlayerViewController: UIViewController {
     let simplePlayer = SimplePlayer.shared
     
     var isSeeking: Bool = false
-    
+    var timeObserver: Any?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updatePlayBtnUI()
-        playerDataUpdate()
+        
+        updatePlayBtnUI() // play btn UI 초기화
+        playerDataUpdate() // 플레이어 아이템 정보 업데이트
         updateCurrentTime(time: CMTime.zero)
+        
+//        CMTime(seconds: 1, preferredTimescale: 10) // (기준시간, 분할 수)
+        timeObserver = simplePlayer.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 10), queue: DispatchQueue.main, using: {time in self.updateCurrentTime(time: time)} )
+        
+        // DispatchQueue.main -> 스케일링된 시간 마다 UILabel을 계속 업데이트 할 것임을 main Thread에 알리겠다..
     }
     
     func playerDataUpdate() {
@@ -77,11 +84,11 @@ class PlayerViewController: UIViewController {
     // 탐색 버튼 동작(시간정보 파싱)
     @IBAction func seek(_ sender: UISlider) {
         guard let currentItem = simplePlayer.currentItem else { return }
-        let position = Double(sender.value)
-        let seconds = currentItem.duration.seconds * position
+        let position = Double(sender.value) // 슬라이더 버튼의 위치 값 0...1 사이값
+        let seconds = currentItem.duration.seconds * position // 재생위치 찾기. 일종의 퍼센티지 계산같은. 현재 플레이어에 있는 아이템의 전체 길이(초)에 위치를 곱하면 현재 재생하고자 하는 위치 표기
         let time = CMTime(seconds: seconds, preferredTimescale: 100)
         
-        simplePlayer.seek(to: time)
+        simplePlayer.seek(to: time) // 플레이어에 seeking 결과 값 전송해 재생하도록 함
     }
     
     func updateCurrentTime(time: CMTime) {
@@ -102,7 +109,7 @@ class PlayerViewController: UIViewController {
         let totalSeconds = Int(sec)
         let min = totalSeconds / 60
         let seconds = totalSeconds % 60
-        return String(format: "&02d:%02d", min, seconds)
+        return String(format: "%02d:%02d", min, seconds)
     }
     
 }
