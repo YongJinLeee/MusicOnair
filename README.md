@@ -2,7 +2,8 @@
 #### CollectionView 기반 Apple Music style의 음악 플레이어 앱입니다.
 패스트캠퍼스 교육 과정 참조.
 
-
+사용 모듈 : UIKit, AVFoundation, Foundation
+주요 함수 : AVPlayer, AVPlayerITem
 ---------- 
 Player 구성 (210809)
 
@@ -13,7 +14,7 @@ Player 구성 (210809)
 Play 버튼 토글시 UI변경 및 음악 재생/멈춤 구현
 
 
-Slider, duration(total) time, current time data 연결 필요
+~~Slider, duration(total) time, current time data 연결 필요~~ (0811)
 ----------
 Collection View style 메인 화면 구현(210808) 
 
