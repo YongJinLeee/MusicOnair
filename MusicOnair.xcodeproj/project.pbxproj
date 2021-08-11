@@ -157,6 +157,7 @@
 		4C4B4A2A26A9787900AC6791 /* MusicOnair */ = {
 			isa = PBXGroup;
 			children = (
+				4C4B4A9926C4092600AC6791 /* Player */,
 				4C4B4A9226C240BD00AC6791 /* Home */,
 				4C4B4A6726B5982200AC6791 /* Track */,
 				4C4B4A5E26AC60E200AC6791 /* Resource */,
@@ -166,10 +167,6 @@
 				4C4B4A3926A9787A00AC6791 /* LaunchScreen.storyboard */,
 				4C4B4A3C26A9787A00AC6791 /* Info.plist */,
 				4C4B4A3426A9787900AC6791 /* MusicOnair.xcdatamodeld */,
-				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
-				4C4B4A9326C2438600AC6791 /* Player.storyboard */,
-				4C4B4A9526C24FAA00AC6791 /* PlayerViewController.swift */,
-				4C4B4A9726C2554F00AC6791 /* SimplePlayer.swift */,
 			);
 			path = MusicOnair;
 			sourceTree = "<group>";
@@ -237,6 +234,17 @@
 				4C4B4A2F26A9787900AC6791 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4C4B4A9926C4092600AC6791 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				4C4B4A9326C2438600AC6791 /* Player.storyboard */,
+				4C4B4A9526C24FAA00AC6791 /* PlayerViewController.swift */,
+				4C4B4A5F26AC61B500AC6791 /* DefaultStyle.swift */,
+				4C4B4A9726C2554F00AC6791 /* SimplePlayer.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
