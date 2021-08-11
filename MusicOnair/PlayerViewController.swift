@@ -36,8 +36,20 @@ class PlayerViewController: UIViewController {
         
 //        CMTime(seconds: 1, preferredTimescale: 10) // (기준시간, 분할 수)
         timeObserver = simplePlayer.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 10), queue: DispatchQueue.main, using: {time in self.updateCurrentTime(time: time)} )
-        
         // DispatchQueue.main -> 스케일링된 시간 마다 UILabel을 계속 업데이트 할 것임을 main Thread에 알리겠다..
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        playerDataUpdate()
+    }
+    // player 닫을 때
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        simplePlayer.pause() // 현재 재생중인 곡 멈춤
+        simplePlayer.replaceCurrentItem(with: nil) // 현재 트랙 아이템 언로드
     }
     
     func playerDataUpdate() {
