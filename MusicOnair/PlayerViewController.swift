@@ -29,7 +29,6 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         updatePlayBtnUI() // play btn UI 초기화
         playerDataUpdate() // 플레이어 아이템 정보 업데이트
         updateCurrentTime(time: CMTime.zero)
@@ -52,16 +51,6 @@ class PlayerViewController: UIViewController {
         simplePlayer.pause() // 현재 재생중인 곡 멈춤
         simplePlayer.replaceCurrentItem(with: nil) // 현재 트랙 아이템 언로드
     }
-    
-    func playerDataUpdate() {
-        let currentTrackInfo = simplePlayer.currentItem?.convertToTrack()
-        guard let currentTrackMetadata = currentTrackInfo else {
-            return }
-        
-        artworkImg.image = currentTrackMetadata.albumCover
-        trackTitle.text = currentTrackMetadata.title
-        trackArtist.text = currentTrackMetadata.artist
-    }
     // 재생버튼 토글 isPlaying은 기본적으로 false로 리턴되어있음(extension 파일에 구현)
     @IBAction func togglePlayBtn(_ sender: UIButton) {
         if simplePlayer.isPlaying {
@@ -71,21 +60,7 @@ class PlayerViewController: UIViewController {
         }
         updatePlayBtnUI()
     }
-    // 재생/멈춤시 play/pause 버튼 이미지 변환 (토글 호출 될 때마다)
-    func updatePlayBtnUI() {
-        if simplePlayer.isPlaying {
-            let configuration = UIImage.SymbolConfiguration(pointSize: 40) // size 지정
-            let pauseImg = UIImage(systemName: "pause.fill", withConfiguration: configuration)
-            
-            playBtn.setImage(pauseImg, for: .normal)
-        } else {
-            let configuration = UIImage.SymbolConfiguration(pointSize: 40)
-            let playImg = UIImage(systemName: "play.fill", withConfiguration: configuration)
-            
-            playBtn.setImage(playImg, for: .normal)
-        }
-    }
-    
+   
     @IBAction func beginDrag(_ sender: UISlider) {
         isSeeking = true
     }
@@ -103,6 +78,19 @@ class PlayerViewController: UIViewController {
         
         simplePlayer.seek(to: time) // 플레이어에 seeking 결과 값 전송해 재생하도록 함
     }
+}
+
+extension PlayerViewController {
+    
+    func playerDataUpdate() {
+        let currentTrackInfo = simplePlayer.currentItem?.convertToTrack()
+        guard let currentTrackMetadata = currentTrackInfo else {
+            return }
+        
+        artworkImg.image = currentTrackMetadata.albumCover
+        trackTitle.text = currentTrackMetadata.title
+        trackArtist.text = currentTrackMetadata.artist
+    }
     
     func updateCurrentTime(time: CMTime) {
         currentTime.text = SecondsToString(sec: simplePlayer.currentTime)
@@ -116,23 +104,31 @@ class PlayerViewController: UIViewController {
     }
     // seeking slider에서 받은 CMTime 값 string으로 변환하기
     func SecondsToString(sec: Double) -> String {
-        guard sec.isNaN == false else {
-            return "00:00"
-        }
+        guard sec.isNaN == false else { return "00:00" }
         let totalSeconds = Int(sec)
         let min = totalSeconds / 60
         let seconds = totalSeconds % 60
         return String(format: "%02d:%02d", min, seconds)
     }
+    // 재생/멈춤시 play/pause 버튼 이미지 변환 (토글 호출 될 때마다)
+    func updatePlayBtnUI() {
+        if simplePlayer.isPlaying {
+            let configuration = UIImage.SymbolConfiguration(pointSize: 40) // size 지정
+            let pauseImg = UIImage(systemName: "pause.fill", withConfiguration: configuration)
+            
+            playBtn.setImage(pauseImg, for: .normal)
+        } else {
+            let configuration = UIImage.SymbolConfiguration(pointSize: 40)
+            let playImg = UIImage(systemName: "play.fill", withConfiguration: configuration)
+            
+            playBtn.setImage(playImg, for: .normal)
+        }
+    }
     
-}
-
-extension PlayerViewController {
- 
     func updateTintColor() {
         // slider, play Button의 색상 다크/라이트 모드 대응
+        // DefaultStyle 열거형 객체 정의 및 사용
         playBtn.tintColor = DefaultStyle.Colors.tint
         timeSlider.tintColor = DefaultStyle.Colors.tint
     }
-    
 }
