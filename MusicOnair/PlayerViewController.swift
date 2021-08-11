@@ -43,6 +43,7 @@ class PlayerViewController: UIViewController {
         super.viewWillAppear(animated)
         
         playerDataUpdate()
+        updateTintColor()
     }
     // player 닫을 때
     override func viewWillDisappear(_ animated: Bool) {
@@ -122,6 +123,16 @@ class PlayerViewController: UIViewController {
         let min = totalSeconds / 60
         let seconds = totalSeconds % 60
         return String(format: "%02d:%02d", min, seconds)
+    }
+    
+}
+
+extension PlayerViewController {
+ 
+    func updateTintColor() {
+        // slider, play Button의 색상 다크/라이트 모드 대응
+        playBtn.tintColor = DefaultStyle.Colors.tint
+        timeSlider.tintColor = DefaultStyle.Colors.tint
     }
     
 }
