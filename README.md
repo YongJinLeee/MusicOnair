@@ -3,9 +3,17 @@
 패스트캠퍼스 교육 과정 참조.
 
 
----------- (210809)
+---------- 
+Player 구성 (210809)
 
 
+![스크린샷 2021-08-10 21 31 10](https://user-images.githubusercontent.com/40759743/128867206-aae58b9f-a9fb-4f48-89f7-ddaebf85d979.png)
+
+
+Play 버튼 토글시 UI변경 및 음악 재생/멈춤 구현
+
+
+Slider, duration(total) time, current time data 연결 필요
 ----------
 Collection View style 메인 화면 구현(210808) 
 
