@@ -6,6 +6,14 @@
 사용 모듈 : UIKit, AVFoundation, Foundation
 
 
+------------------
+player slider seeking 기능 구현 및 현재 재생구간 시간표기, 음원 총 길이(시간) 표기 
+
+
+![스크린샷 2021-08-12 23 36 53](https://user-images.githubusercontent.com/40759743/129216368-9c438390-582a-4d04-8267-9e7afb8cbc47.png)
+
+
+
 ---------- 
 Player 구성 (210809)
 
