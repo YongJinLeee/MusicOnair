@@ -17,6 +17,8 @@ Play 버튼 토글시 UI변경 및 음악 재생/멈춤 구현
 
 
 ~~Slider, duration(total) time, current time data 연결 필요~~ (0811)
+
+
 ----------
 Collection View style 메인 화면 구현(210808) 
 
