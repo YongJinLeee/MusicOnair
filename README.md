@@ -12,7 +12,8 @@ Player:
 - slider seeking 기능 구현 및 현재 재생구간 시간표기, 음원 총 길이(시간) 표기 
 - Light/Dark 모드 대응(Slider, Play-Pause 버튼, Default systemColor, Tint)
 
-![스크린샷 2021-08-12 23 36 53](https://user-images.githubusercontent.com/40759743/129216368-9c438390-582a-4d04-8267-9e7afb8cbc47.png)
+
+![스크린샷 2021-08-12 23 41 47](https://user-images.githubusercontent.com/40759743/129216982-b65de8f7-a65a-45f6-b5b8-521790b8391d.png)
 
 
 
