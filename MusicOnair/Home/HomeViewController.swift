@@ -51,9 +51,6 @@ extension HomeViewController: UICollectionViewDataSource {
                 guard let PlayerViewCtrl = playerStoryboard.instantiateViewController(identifier: "PlayerViewController") as? PlayerViewController else { return }
                 PlayerViewCtrl.simplePlayer.replaceCurrentItem(with: todaysTrack)
                 self.present(PlayerViewCtrl, animated: true, completion: nil)
-                
-                //console test
-                print("---------> Today's track title: \(todaysTrack.convertToTrack()?.title) ")
             }
             
             
