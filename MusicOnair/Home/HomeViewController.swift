@@ -52,9 +52,6 @@ extension HomeViewController: UICollectionViewDataSource {
                 PlayerViewCtrl.simplePlayer.replaceCurrentItem(with: todaysTrack)
                 self.present(PlayerViewCtrl, animated: true, completion: nil)
             }
-            
-            
-            
             return header
         default:
             return UICollectionReusableView()
